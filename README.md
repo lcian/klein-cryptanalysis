@@ -3,12 +3,12 @@
 
 This repository contains my project for the course of "Advanced Topics in Cybersecurity 1" at the University of Klagenfurt.
 
-The project is an implementation of a differential attack on a round-reduced version of the KLEIN block cipher, using the ideas of https://eprint.iacr.org/2014/090.
+The project is an implementation of a differential attack on a round-reduced version of the KLEIN block cipher, using the ideas of [this paper](https://eprint.iacr.org/2014/090).
 OpenMP is used to parallelize the bruteforce phase to recover the higher nibbles.
 
 You can read the report [here](report.pdf), where I explain the attack and its computational complexity.
 
-The implementation of KLEIN (speedklein64.h) is due to Gong Zheng and was taken from https://github.com/GongZheng/KLEIN.
+The implementation of KLEIN (speedklein64.h) is due to Gong Zheng and was taken from [this repository](https://github.com/GongZheng/KLEIN).
 
 # How to use
 
