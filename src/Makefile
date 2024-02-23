@@ -1,2 +1,11 @@
+CC ?= clang
+
+CFLAGS ?= -march=native -O3 -Wno-incompatible-pointer-types -Wno-main-return-type -funroll-loops
+LFLAGS ?= -lm
+OPENMP ?= -fopenmp
+
 attack: attack.c klein.c klein.h common.c common.h speedklein64.h kleinSbox.h config.h
-	clang attack.c common.c klein.c speedklein64.h kleinSbox.h config.h -march=native -O3 -fopenmp -lm -Wno-incompatible-pointer-types -Wno-main-return-type -o attack
+	$(CC) attack.c common.c klein.c -o attack $(CFLAGS) $(LFLAGS) $(OPENMP)
+
+clean:
+	rm -f attack
