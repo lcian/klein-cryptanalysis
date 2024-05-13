@@ -1,6 +1,5 @@
-#include <stdint.h>
 #include <stdbool.h>
-
+#include <stdint.h>
 
 // Number of rounds
 #define NR 5

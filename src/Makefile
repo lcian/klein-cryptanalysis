@@ -9,3 +9,6 @@ attack: attack.c klein.c klein.h common.c common.h speedklein64.h kleinSbox.h co
 
 clean:
 	rm -f attack
+
+format:
+	clang-format --style file -i *.c *.h
